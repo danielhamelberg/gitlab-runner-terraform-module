@@ -1,5 +1,5 @@
 # gitlab-runner-terraform-module
-Outlines how to manage GitLab Runners in a Terraform module
+Outlines Karpenter-based GitLab Runners in a Terraform module using provider https://registry.terraform.io/providers/gitlabhq/gitlab.
 
 # GitLab Runner Terraform Module ##
 

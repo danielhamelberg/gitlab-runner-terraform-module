@@ -27,8 +27,8 @@ resource "local_file" "config" {
 #       mount_path = "/mnt/dir"
 #   [runners.kubernetes.node_selector]
 #       app = "gitlab-runner"
-#   [[gitlab.kubernetes.node_tolerations]]
-#     "karpenter=True" = "NoSchedule"
+  [[gitlab.kubernetes.node_tolerations]] # Tolerates the taint of a Karpenter provisioner custom resource
+    "karpenter=True" = "NoSchedule"
 #   [runners.kubernetes]
 #       [runners.kubernetes.affinity]
 #         [runners.kubernetes.affinity.node_affinity]
